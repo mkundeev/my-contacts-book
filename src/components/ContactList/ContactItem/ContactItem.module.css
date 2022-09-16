@@ -1,0 +1,26 @@
+.contactItem{
+    display: flex;
+    justify-content: space-between;
+}
+
+.number {
+    font-weight: 400;
+}
+.name{
+    font-weight: 500;
+}
+.button {
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+}
+.contactWrap{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.buttonWrap{
+    display: flex;
+    gap: 5px;
+}

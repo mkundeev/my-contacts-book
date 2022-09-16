@@ -1,0 +1,7 @@
+.loaderWrap{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
