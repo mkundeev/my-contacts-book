@@ -1,8 +1,8 @@
 {
-  "name": "react-homework-template",
+  "name": "my-contacts-book",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mkundeev.github.io/goit-react-hw-08-phonebook",
+  "homepage": "https://mkundeev.github.io/myContactsBook",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
