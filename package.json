@@ -2,7 +2,7 @@
   "name": "my-contacts-book",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mkundeev.github.io/myContactsBook",
+  "homepage": "https://mkundeev.github.io/my-contacts-book",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
