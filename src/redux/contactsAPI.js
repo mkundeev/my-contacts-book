@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const contactsApi = createApi({
   reducerPath: 'contacts',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://connections-api.herokuapp.com/',
+    baseUrl: 'http://localhost:4000/api/',
     prepareHeaders: (headers, { getState }) => {
       const token = getState().currentUser.token;
       if (token) {
@@ -48,6 +48,16 @@ export const contactsApi = createApi({
       },
       invalidatesTags: ['Contacts'],
     }),
+    setFavoriteContact: builder.mutation({
+      query({ favorite, contactId }) {
+        return {
+          url: `contacts/${contactId}/favorite`,
+          method: 'PATCH',
+          body: { favorite },
+        };
+      },
+      invalidatesTags: ['Contacts'],
+    }),
     registerUser: builder.mutation({
       query(user) {
         return {
@@ -83,7 +93,36 @@ export const contactsApi = createApi({
           url: `users/current`,
         };
       },
+      providesTags: ['Users'],
+    }),
+    changeAvatar: builder.mutation({
+      query(avatar) {
+        return {
+          url: `users/avatars`,
+          method: 'PATCH',
+          body: avatar,
+        };
+      },
       invalidatesTags: ['Users'],
+    }),
+    changeSubscription: builder.mutation({
+      query(subscription) {
+        return {
+          url: `users/`,
+          method: 'PATCH',
+          body: subscription,
+        };
+      },
+      invalidatesTags: ['Users'],
+    }),
+    resendVerification: builder.mutation({
+      query(email) {
+        return {
+          url: `users/verify`,
+          method: 'POST',
+          body: email,
+        };
+      },
     }),
   }),
 });
@@ -97,4 +136,8 @@ export const {
   useRegisterUserMutation,
   useLogOutUserMutation,
   useGetUserQuery,
+  useChangeAvatarMutation,
+  useSetFavoriteContactMutation,
+  useChangeSubscriptionMutation,
+  useResendVerificationMutation,
 } = contactsApi;

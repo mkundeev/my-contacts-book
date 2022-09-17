@@ -35,7 +35,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(18, 18, 220);
+  background-color: #1212dc;
   color: #fff;
   
 }
@@ -47,4 +47,14 @@ p, h1,h2,h3,h4,h5,h6{
 h2{
   margin-bottom: 10px;
 }
-
+/* ===========contactsList Mui accordeon styles====================== */
+.MuiAccordionSummary-content {
+  margin: 0!important;
+  min-height: fit-content !important;
+}
+.Mui-expanded{
+  min-height: fit-content!important;
+}
+.MuiAccordionSummary-root{
+min-height: fit-content !important;
+}

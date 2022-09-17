@@ -2,5 +2,6 @@
     margin: 0 auto;
     padding-top: 20px;
     width: fit-content;
+    min-width: 300px;
     position: relative;
 }

@@ -1,0 +1,8 @@
+.link{
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+.link:hover {
+    color: #1212dc;
+}

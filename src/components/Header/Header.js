@@ -12,7 +12,7 @@ export default function Header() {
     <>
       <header className={s.header}>
         <div className={s.logo}>
-          <span className={s.logoSpan}>Phone</span>book
+          <span className={s.logoSpan}>Contacts</span>book
         </div>
         <div className={s.hederLinkWrap}>
           {!isLogin ? (

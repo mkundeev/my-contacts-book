@@ -3,6 +3,7 @@
 .contactsPageWrap{
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     width: 768px;
 }
 }

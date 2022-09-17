@@ -5,13 +5,14 @@ import s from './ContactForm.module.css';
 
 export default function ContactForm({
   name = 'Name',
-  number = 'Number',
+  phone = 'Number',
+  email = 'Email',
   changeData,
   onSubmit,
 }) {
   return (
     <Formik
-      initialValues={{ name: '', number: '' }}
+      initialValues={{ name: '', phone: '', email: '' }}
       validationSchema={Yup.object(
         changeData
           ? {
@@ -19,10 +20,11 @@ export default function ContactForm({
                 /(^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$)/,
                 "Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
               ),
-              number: Yup.string().matches(
+              phone: Yup.string().matches(
                 /(\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9})/,
                 'Phone number must be digits and can contain spaces, dashes, parentheses and can start with +'
               ),
+              email: Yup.string().email('Please provide valid e-mail'),
             }
           : {
               name: Yup.string()
@@ -31,12 +33,13 @@ export default function ContactForm({
                   "Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
                 )
                 .required('Required'),
-              number: Yup.string()
+              phone: Yup.string()
                 .matches(
                   /(\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9})/,
                   'Phone number must be digits and can contain spaces, dashes, parentheses and can start with +'
                 )
                 .required('Required'),
+              email: Yup.string().email('Please provide valid e-mail'),
             }
       )}
       onSubmit={(values, { setSubmitting, resetForm }) => {
@@ -55,12 +58,20 @@ export default function ContactForm({
           render={msg => <div className={s.error}>{msg}</div>}
         />
 
-        <label htmlFor="name" className={s.label}>
-          {number}
+        <label htmlFor="phone" className={s.label}>
+          {phone}
         </label>
-        <Field name="number" type="tel" className={s.input} />
+        <Field name="phone" type="tel" className={s.input} />
         <ErrorMessage
-          name="number"
+          name="phone"
+          render={msg => <div className={s.error}>{msg}</div>}
+        />
+        <label htmlFor="email" className={s.label}>
+          {email}
+        </label>
+        <Field name="email" type="email" className={s.input} />
+        <ErrorMessage
+          name="email"
           render={msg => <div className={s.error}>{msg}</div>}
         />
 

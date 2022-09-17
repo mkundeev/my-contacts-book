@@ -12,6 +12,7 @@ export default function ContactsPage() {
   const [filter, setFilter] = useState('');
   const { data } = useGetContactsQuery();
   const [addContact] = useAddContactMutation();
+
   const formSubmit = contact => {
     if (data.some(({ name }) => name === contact.name)) {
       toast.error(`${contact.name} is already in contacts`, {
@@ -35,7 +36,7 @@ export default function ContactsPage() {
   return (
     <div className={s.contactsPageWrap}>
       <Container>
-        <h2>Phonebook menu</h2>
+        <h2>Contactsbook menu</h2>
         <ContactForm onSubmit={formSubmit} />
         <Filter changeFilter={setFilter} />
       </Container>

@@ -44,31 +44,37 @@ export default function RegistrationForm({ registration }) {
         registration
           ? registerUser(values)
               .unwrap()
-              .then(payload => {
-                dispatch(setUser(payload));
-                navigate('/contacts', { replace: true });
+              .then(() => {
+                // dispatch(setUser(payload));
+                navigate('/authorization', { replace: true });
+                toast.success(`Please verify your e-mail`);
               })
-              .catch(() =>
-                toast.error(
-                  `User with such email already exist. Do you want to Log in?`,
-                  {
-                    position: toast.POSITION.TOP_RIGHT,
-                    onClick: () =>
-                      navigate('/authorization', { replace: true }),
-                  }
-                )
-              )
+              .catch(err => {
+                if (err.status === 409) {
+                  toast.error(
+                    `User with such email already exist. Do you want to Log in?`,
+                    {
+                      position: toast.POSITION.TOP_RIGHT,
+                      onClick: () =>
+                        navigate('/authorization', { replace: true }),
+                    }
+                  );
+                }
+                toast.error(err.data.message, {
+                  position: toast.POSITION.TOP_RIGHT,
+                });
+              })
           : authorizeUser(values)
               .unwrap()
               .then(payload => {
                 dispatch(setUser(payload));
                 navigate('/contacts', { replace: true });
               })
-              .catch(() =>
-                toast.error(`Please put correct data`, {
+              .catch(err => {
+                toast.error(err.data.message, {
                   position: toast.POSITION.TOP_RIGHT,
-                })
-              );
+                });
+              });
         setSubmitting(false);
         resetForm({});
       }}

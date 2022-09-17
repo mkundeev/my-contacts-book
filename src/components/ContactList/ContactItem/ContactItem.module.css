@@ -5,22 +5,38 @@
 
 .number {
     font-weight: 400;
+    margin-bottom: 10px;
+}
+.email {
+    font-weight: 400;
 }
 .name{
     font-weight: 500;
 }
 .button {
-    margin-left: auto;
-    margin-right: 0;
+    
     display: flex;
     align-items: center;
 }
+.isFavorite{
+    fill: #1212dc
+}
+.button:hover .isFavorite {
+    fill: #ffffff
+}
 .contactWrap{
     display: flex;
+    
     flex-direction: column;
     width: fit-content;
 }
 .buttonWrap{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 10px;
+}
+.innerButtonWrap{
     display: flex;
     gap: 5px;
 }
