@@ -92,10 +92,20 @@ export default function ContactItem({ name, phone, id, email, favorite }) {
           </Tooltip>
         </div>
       </div>
-      <div className={s.contactWrap}>
-        <span className={s.number}>Phone: {phone}</span>
-        <span className={s.email}>E-mail: {email}</span>
-      </div>
+      <ul className={s.contactWrap}>
+        <li className={s.contactItem}>
+          Phone:
+          <a href={`tel:${phone}`} className={s.number}>
+            {phone}
+          </a>
+        </li>
+        <li className={s.contactItem}>
+          Email:
+          <a href={`mailto:${email}`} className={s.email}>
+            {email}
+          </a>
+        </li>
+      </ul>
 
       <Popover
         id={idPopover}

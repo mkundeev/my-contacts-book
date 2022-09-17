@@ -58,3 +58,4 @@ h2{
 .MuiAccordionSummary-root{
 min-height: fit-content !important;
 }
+.MuiAccordionDetails-root{padding: 8px 16px!important;}

@@ -3,13 +3,17 @@
     justify-content: space-between;
 }
 
-.number {
+
+.email, .number {
     font-weight: 400;
+    text-decoration: none;
+    margin-left: 5px;
+    
+}
+.contactItem:not(:last-child){
     margin-bottom: 10px;
 }
-.email {
-    font-weight: 400;
-}
+
 .name{
     font-weight: 500;
 }
@@ -28,7 +32,8 @@
     display: flex;
     
     flex-direction: column;
-    width: fit-content;
+    width: 100%;
+    font-size: 14px;
 }
 .buttonWrap{
     display: flex;
