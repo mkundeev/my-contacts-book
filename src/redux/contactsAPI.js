@@ -1,10 +1,9 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-// import { REHYDRATE } from 'redux-persist';
 
 export const contactsApi = createApi({
   reducerPath: 'contacts',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:4000/api/',
+    baseUrl: 'https://contacts-book-mk.herokuapp.com/api/',
     prepareHeaders: (headers, { getState }) => {
       const token = getState().currentUser.token;
       if (token) {
