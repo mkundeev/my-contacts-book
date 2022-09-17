@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/my-contacts-book/static/css/main.bde9c802.css",
+    "main.js": "/my-contacts-book/static/js/main.d7c03916.js",
+    "header.css": "/my-contacts-book/static/css/header.64c23a87.chunk.css",
+    "header.js": "/my-contacts-book/static/js/header.55ff3241.chunk.js",
+    "registration.css": "/my-contacts-book/static/css/registration.87a74f92.chunk.css",
+    "registration.js": "/my-contacts-book/static/js/registration.dc7a0701.chunk.js",
+    "authorization.css": "/my-contacts-book/static/css/authorization.3b9d9ba9.chunk.css",
+    "authorization.js": "/my-contacts-book/static/js/authorization.258d2b51.chunk.js",
+    "contacts.css": "/my-contacts-book/static/css/contacts.0dbcb2bd.chunk.css",
+    "contacts.js": "/my-contacts-book/static/js/contacts.16b65c7e.chunk.js",
+    "static/js/319.dc56f448.chunk.js": "/my-contacts-book/static/js/319.dc56f448.chunk.js",
+    "static/js/268.ad2c755d.chunk.js": "/my-contacts-book/static/js/268.ad2c755d.chunk.js",
+    "static/js/966.20388a45.chunk.js": "/my-contacts-book/static/js/966.20388a45.chunk.js",
+    "static/js/741.3aeee781.chunk.js": "/my-contacts-book/static/js/741.3aeee781.chunk.js",
+    "static/js/942.651ea39a.chunk.js": "/my-contacts-book/static/js/942.651ea39a.chunk.js",
+    "index.html": "/my-contacts-book/index.html",
+    "main.bde9c802.css.map": "/my-contacts-book/static/css/main.bde9c802.css.map",
+    "main.d7c03916.js.map": "/my-contacts-book/static/js/main.d7c03916.js.map",
+    "header.64c23a87.chunk.css.map": "/my-contacts-book/static/css/header.64c23a87.chunk.css.map",
+    "header.55ff3241.chunk.js.map": "/my-contacts-book/static/js/header.55ff3241.chunk.js.map",
+    "registration.87a74f92.chunk.css.map": "/my-contacts-book/static/css/registration.87a74f92.chunk.css.map",
+    "registration.dc7a0701.chunk.js.map": "/my-contacts-book/static/js/registration.dc7a0701.chunk.js.map",
+    "authorization.3b9d9ba9.chunk.css.map": "/my-contacts-book/static/css/authorization.3b9d9ba9.chunk.css.map",
+    "authorization.258d2b51.chunk.js.map": "/my-contacts-book/static/js/authorization.258d2b51.chunk.js.map",
+    "contacts.0dbcb2bd.chunk.css.map": "/my-contacts-book/static/css/contacts.0dbcb2bd.chunk.css.map",
+    "contacts.16b65c7e.chunk.js.map": "/my-contacts-book/static/js/contacts.16b65c7e.chunk.js.map",
+    "319.dc56f448.chunk.js.map": "/my-contacts-book/static/js/319.dc56f448.chunk.js.map",
+    "268.ad2c755d.chunk.js.map": "/my-contacts-book/static/js/268.ad2c755d.chunk.js.map",
+    "966.20388a45.chunk.js.map": "/my-contacts-book/static/js/966.20388a45.chunk.js.map",
+    "741.3aeee781.chunk.js.map": "/my-contacts-book/static/js/741.3aeee781.chunk.js.map",
+    "942.651ea39a.chunk.js.map": "/my-contacts-book/static/js/942.651ea39a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bde9c802.css",
+    "static/js/main.d7c03916.js"
+  ]
+}
