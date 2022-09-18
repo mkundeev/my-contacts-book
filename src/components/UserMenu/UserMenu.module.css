@@ -28,7 +28,7 @@
 
 .userProfileLink{
     display: flex;
-    gap:10px;
+    gap:20px;
     align-items: center;
     text-decoration: none;
 }
@@ -53,6 +53,10 @@
 .userInfoWrap{
     display: flex;
     flex-direction: column;
+}
+.name{
+    font-weight: 500;
+    margin-bottom: 5px;
 }
 .subscription{
     cursor: pointer;

@@ -12,8 +12,10 @@ export default function ContactList({ contacts }) {
     <ul className={s.list}>
       {contacts &&
         [...contacts]
-          .sort(({ name: nameA }, { name: nameB }) =>
-            nameA.toLowerCase().localeCompare(nameB.toLowerCase())
+          .sort(
+            ({ favorite: favoriteA }, { favorite: favoriteB }) =>
+              Number(favoriteB) - Number(favoriteA)
+            // favoriteA.toLowerCase().localeCompare(favoriteB.toLowerCase())
           )
           .map(({ name, phone, _id, email, favorite }) => (
             <li key={_id} className={s.item}>

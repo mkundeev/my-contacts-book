@@ -9,12 +9,7 @@ import Tooltip from '@mui/material/Tooltip';
 import Popover from '@mui/material/Popover';
 import s from './UserMenu.module.css';
 import { store } from 'redux/store';
-import {
-  getToken,
-  getEmail,
-  getAvatar,
-  getSubscription,
-} from 'redux/selectors';
+import { getToken, getAvatar, getSubscription, getName } from 'redux/selectors';
 import { contactsApi } from 'redux/contactsAPI';
 import AvatarComponent from 'components/Avatar';
 import SubscriptionRadioButton from 'components/SubscriptionRadioButton';
@@ -24,7 +19,7 @@ export default function UserMenu() {
   const [logOutUser] = useLogOutUserMutation();
   const [setAvatar] = useChangeAvatarMutation();
   const token = useSelector(getToken);
-  const email = useSelector(getEmail);
+  const name = useSelector(getName);
   const avatar = useSelector(getAvatar);
   const subscription = useSelector(getSubscription);
 
@@ -62,12 +57,12 @@ export default function UserMenu() {
             </label>
           </Tooltip>
           <div className={s.userInfoWrap}>
+            <p className={s.name}>{name}</p>
             <Tooltip title="Change subscription">
               <p className={s.subscription} onClick={handleClick}>
                 Subscription: {subscription}
               </p>
             </Tooltip>
-            <p>{email}</p>
           </div>
         </li>
         <li className={s.hederListItem}>

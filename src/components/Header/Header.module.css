@@ -1,5 +1,5 @@
 .header{
-    padding: 20px 0;
+    padding: 10px 42px;
     margin: 0 auto;  
     width: 400px;
     display: flex;
@@ -18,8 +18,6 @@
         flex-direction: row;
         justify-content: space-between;
         width: 768px;
-        padding-left: 42px;
-        padding-right: 42px;
     }
     .logo {
         margin-bottom: 0;}

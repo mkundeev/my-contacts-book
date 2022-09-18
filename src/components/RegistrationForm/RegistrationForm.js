@@ -59,10 +59,11 @@ export default function RegistrationForm({ registration }) {
                         navigate('/authorization', { replace: true }),
                     }
                   );
+                } else {
+                  toast.error(err.data.message, {
+                    position: toast.POSITION.TOP_RIGHT,
+                  });
                 }
-                toast.error(err.data.message, {
-                  position: toast.POSITION.TOP_RIGHT,
-                });
               })
           : authorizeUser(values)
               .unwrap()
