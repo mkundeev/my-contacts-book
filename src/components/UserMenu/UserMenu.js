@@ -5,14 +5,15 @@ import {
   useLogOutUserMutation,
   useChangeAvatarMutation,
 } from 'redux/contactsAPI';
+import { toast } from 'react-toastify';
 import Tooltip from '@mui/material/Tooltip';
 import Popover from '@mui/material/Popover';
-import s from './UserMenu.module.css';
 import { store } from 'redux/store';
 import { getToken, getAvatar, getSubscription, getName } from 'redux/selectors';
 import { contactsApi } from 'redux/contactsAPI';
 import AvatarComponent from 'components/Avatar';
 import SubscriptionRadioButton from 'components/SubscriptionRadioButton';
+import s from './UserMenu.module.css';
 
 export default function UserMenu() {
   const dispatch = useDispatch();
@@ -37,6 +38,15 @@ export default function UserMenu() {
 
   const handleFileInput = async e => {
     const file = e.target.files[0];
+    if (!file) {
+      return;
+    }
+    if (!(file.type === 'image/jpeg' || file.type === 'image/png')) {
+      toast.error('Avatar shoude be image', {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+      return;
+    }
     const formData = new FormData();
     formData.append('avatar', file);
     await setAvatar(formData).unwrap();

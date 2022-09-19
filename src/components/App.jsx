@@ -76,7 +76,11 @@ function App() {
           />
         </Routes>
       </Suspense>
-      <ToastContainer theme="colored" autoClose={3000} />
+      <ToastContainer
+        autoClose={4000}
+        closeButton={false}
+        hideProgressBar={true}
+      />
     </div>
   );
 }
