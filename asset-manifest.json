@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/my-contacts-book/static/css/main.a168d957.css",
-    "main.js": "/my-contacts-book/static/js/main.7bc5ab40.js",
-    "header.css": "/my-contacts-book/static/css/header.633b7eeb.chunk.css",
-    "header.js": "/my-contacts-book/static/js/header.b5c22a03.chunk.js",
+    "main.js": "/my-contacts-book/static/js/main.a704a705.js",
+    "header.css": "/my-contacts-book/static/css/header.8f931adf.chunk.css",
+    "header.js": "/my-contacts-book/static/js/header.11947b73.chunk.js",
     "registration.css": "/my-contacts-book/static/css/registration.87a74f92.chunk.css",
     "registration.js": "/my-contacts-book/static/js/registration.340d2f6d.chunk.js",
     "authorization.css": "/my-contacts-book/static/css/authorization.3b9d9ba9.chunk.css",
@@ -17,9 +17,9 @@
     "static/js/942.915a4540.chunk.js": "/my-contacts-book/static/js/942.915a4540.chunk.js",
     "index.html": "/my-contacts-book/index.html",
     "main.a168d957.css.map": "/my-contacts-book/static/css/main.a168d957.css.map",
-    "main.7bc5ab40.js.map": "/my-contacts-book/static/js/main.7bc5ab40.js.map",
-    "header.633b7eeb.chunk.css.map": "/my-contacts-book/static/css/header.633b7eeb.chunk.css.map",
-    "header.b5c22a03.chunk.js.map": "/my-contacts-book/static/js/header.b5c22a03.chunk.js.map",
+    "main.a704a705.js.map": "/my-contacts-book/static/js/main.a704a705.js.map",
+    "header.8f931adf.chunk.css.map": "/my-contacts-book/static/css/header.8f931adf.chunk.css.map",
+    "header.11947b73.chunk.js.map": "/my-contacts-book/static/js/header.11947b73.chunk.js.map",
     "registration.87a74f92.chunk.css.map": "/my-contacts-book/static/css/registration.87a74f92.chunk.css.map",
     "registration.340d2f6d.chunk.js.map": "/my-contacts-book/static/js/registration.340d2f6d.chunk.js.map",
     "authorization.3b9d9ba9.chunk.css.map": "/my-contacts-book/static/css/authorization.3b9d9ba9.chunk.css.map",
@@ -34,6 +34,6 @@
   },
   "entrypoints": [
     "static/css/main.a168d957.css",
-    "static/js/main.7bc5ab40.js"
+    "static/js/main.a704a705.js"
   ]
 }
