@@ -6,6 +6,7 @@ import { useGetUserQuery } from 'redux/contactsAPI';
 import { ToastContainer } from 'react-toastify';
 import PublicRoute from 'Routs/PublicRoute';
 import PrivateRoute from 'Routs/PrivateRoute';
+import RingLoader from 'react-spinners/RingLoader';
 
 import { setUser } from 'redux/reducer';
 
@@ -32,7 +33,13 @@ function App() {
 
   return (
     <div>
-      <Suspense fallback={<div>...Loading</div>}>
+      <Suspense
+        fallback={
+          <div className="loader">
+            <RingLoader color="#1212dc" size={250} />
+          </div>
+        }
+      >
         <Header />
         <Routes>
           <Route
