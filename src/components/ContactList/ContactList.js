@@ -15,7 +15,6 @@ export default function ContactList({ contacts }) {
           .sort(
             ({ favorite: favoriteA }, { favorite: favoriteB }) =>
               Number(favoriteB) - Number(favoriteA)
-            // favoriteA.toLowerCase().localeCompare(favoriteB.toLowerCase())
           )
           .map(({ name, phone, _id, email, favorite }) => (
             <li key={_id} className={s.item}>
