@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-contacts-book/static/css/main.a168d957.css",
-    "main.js": "/my-contacts-book/static/js/main.a704a705.js",
+    "main.js": "/my-contacts-book/static/js/main.67496814.js",
     "header.css": "/my-contacts-book/static/css/header.8f931adf.chunk.css",
     "header.js": "/my-contacts-book/static/js/header.11947b73.chunk.js",
     "registration.css": "/my-contacts-book/static/css/registration.87a74f92.chunk.css",
@@ -17,7 +17,7 @@
     "static/js/942.915a4540.chunk.js": "/my-contacts-book/static/js/942.915a4540.chunk.js",
     "index.html": "/my-contacts-book/index.html",
     "main.a168d957.css.map": "/my-contacts-book/static/css/main.a168d957.css.map",
-    "main.a704a705.js.map": "/my-contacts-book/static/js/main.a704a705.js.map",
+    "main.67496814.js.map": "/my-contacts-book/static/js/main.67496814.js.map",
     "header.8f931adf.chunk.css.map": "/my-contacts-book/static/css/header.8f931adf.chunk.css.map",
     "header.11947b73.chunk.js.map": "/my-contacts-book/static/js/header.11947b73.chunk.js.map",
     "registration.87a74f92.chunk.css.map": "/my-contacts-book/static/css/registration.87a74f92.chunk.css.map",
@@ -34,6 +34,6 @@
   },
   "entrypoints": [
     "static/css/main.a168d957.css",
-    "static/js/main.a704a705.js"
+    "static/js/main.67496814.js"
   ]
 }
